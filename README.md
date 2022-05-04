@@ -1,2 +1,2 @@
-# todo-list-app
-Projeto Lista de Tarefas
+# Projeto Lista de Tarefas
+
