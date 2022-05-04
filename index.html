@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Lista de Tarefas</h1>
-        <form id="task-form">
-            <input type="text" id="task-input" placeholder="Qual a sua tarefa?"/>
-            <input type="submit" value="Adicionar"/>
-        </form>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Tarefas</title>
 
-    <main>
-        <section>
-            <h2>Tarefas</h2>
-            <div id="tasks">
-                <div class="task">
-                    <div class="container">
-                        <input 
-                        type="text" 
-                        class="text" 
-                        value="Minha tarefa" 
-                        readonly
-                        />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Qual a sua tarefa?" />
+                <input id="task-submit" type="submit" value="Adicionar" />
+            </form>
+        </header>
+
+        <main>
+            <section class="task-list">
+                <h2>Tarefas</h2>
+
+                <div id="tasks">
+
+                    <div class="task">
+                        <div class="task">
+                            <div class="container">
+                                <input type="text" class="text" value="meu texto" readonly>
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Editar</button>
+                                <button class="delete">Deletar</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="actions">
-                        <button class="edit">Editar</button>
-                        <button class="delete">Deletar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="js/main.js"></script>
-</body>
+            </section>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+
 </html>
